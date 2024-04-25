@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang ="en" dir="ltr">
+
+
+    <head>
+        <meta charset ="utf-8">
+        <title>Future IT Professional: Jhon Nichole B. Tampos</title>
+        <meta name = "viewport" content ="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="index.css">
+    </head>
+    <body class = "gif"> 
+    <nav role="navigation" aria-label="Main menu">
+    <ul class="nav-menu">
+    <li><img src="./pic/f5.png" alt="Your Company Logo" align = "left" class="logo"/></li>
+      <li><a href="index2.html">Homepage</a></li>
+      <li><a href="index3.html">Characters</a></li>
+      <li><a href="index4.html">Arcs</a></li>
+      <li><a href="index5.html">Contact Page</a></li>
+    </ul>
+  </nav>
+  
+  <br>
+    <br>
+        <br>
+            <br>
+                <br>
+                    <br>
+                        <br>
+                             <br>
+                                 <br>
+                                     <br>
+      <h1 align = "center">This page is dedicated to my favorite anime, "Bleach". This webpage features the characters and plotlines from it. I hope you enjoy!</h1>
+      <div class = "button-container"><button id="modeBtn" aria-label="Toggle dark and light mode" class = "login">Toggle Mode</button>
+          <br>
+      <button id="increaseFont" aria-label="Increase font size" class = "login">Increase font size</button>
+          <br>    
+      <button id="decreaseFont" aria-label="Decrease font size" class = "login">Decrease font size</button>
+      </div>
+      <p><b></b></p>
+  
+      <script>
+          let darkMode = false;
+          
+          document.getElementById("modeBtn").onclick = function() {
+              const body = document.body;
+              if (!darkMode) {
+                  body.style.backgroundColor = "#000000";
+                  body.style.color = "#FFFFFF";
+                  darkMode = true;
+              } else {
+                  body.style.backgroundColor = "#FFFFFF";
+                  body.style.color = "#000000";
+                  darkMode = false;
+              }
+          }
+  
+          document.getElementById("increaseFont").onclick = function(){
+              document.body.style.fontSize = (parseInt(window.getComputedStyle(document.body).fontSize) + 1) + "px";
+          }
+          
+          document.getElementById("decreaseFont").onclick = function(){
+              document.body.style.fontSize = (parseInt(window.getComputedStyle(document.body).fontSize) - 1) + "px";
+          }
+      </script>
+
+    <!--<p class="home" align = "center">This page is dedicated to my favorite anime, "Bleach". This webpage features the characters and plotlines from it. I hope you enjoy!</p></div>
+    </h1>-->
+  </body>
+
+  </html>
